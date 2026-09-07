@@ -1,0 +1,15 @@
+# Deployment metadata
+.netlify/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local configuration and temporary files
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
