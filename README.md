@@ -7,7 +7,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-styles-1572b6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-interactions-f7df1e?logo=javascript&logoColor=111)](https://developer.mozilla.org/docs/Web/JavaScript)
 
-![Younes Mahboubi](photo.png)
+![Portfolio website preview](docs/preview.png)
 
 ## The problem it solves
 
