@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-22",
+  "projects": [
+    {
+      "name": "RH Manager Pro",
+      "slug": "rh-manager-pro",
+      "category": "HR workflow management",
+      "status": "live-demo",
+      "description": "Démonstrateur browser-first pour centraliser les employés, congés, estimations de paie et rapports opérationnels des entreprises algériennes.",
+      "repository": "https://github.com/mahboubi-younes/rh-manager-demo",
+      "demo": "https://mahboubi-younes.github.io/rh-manager-demo/",
+      "technologies": ["HTML", "CSS", "JavaScript", "localStorage"],
+      "screenshots": ["docs/rh-manager-pro.png"],
+      "demoCapabilities": ["tableau de bord", "recherche employés", "création employé", "création congé", "rapports"],
+      "limitations": ["données fictives locales", "aucun backend", "calculs de paie indicatifs"],
+      "featured": true,
+      "snapshotOrder": 1
+    },
+    {
+      "name": "GEMA Entreprise",
+      "slug": "gema-entreprise",
+      "category": "Enterprise asset management",
+      "status": "live-demo",
+      "description": "MVP frontend autonome de gestion du parc matériel : affectations, restitutions, maintenance, documents administratifs et traçabilité pour les entreprises algériennes.",
+      "repository": "https://github.com/mahboubi-younes/gema-entreprise",
+      "demo": "https://mahboubi-younes.github.io/gema-entreprise/",
+      "technologies": ["React", "Vite", "localStorage", "GitHub Pages"],
+      "screenshots": ["docs/gema-dashboard.png", "docs/gema-parc-materiel.png"],
+      "demoCapabilities": ["dashboard parc", "recherche globale", "affectation", "restitution", "RBAC démo", "journal d’activité"],
+      "limitations": ["authentification frontend de démonstration", "données fictives propres au navigateur", "documents imprimés côté navigateur"],
+      "featured": true,
+      "snapshotOrder": 2
+    },
+    {
+      "name": "Sillage — PerfumierPro",
+      "slug": "sillage-perfumierpro",
+      "category": "Retail operations",
+      "status": "activation-gated-demo",
+      "description": "Système de gestion pour parfumeries : point de vente, inventaire, clients, fidélité, historique des ventes, reporting et tarification par format.",
+      "repository": "https://github.com/mahboubi-younes/sillage-perfumierpro-demo",
+      "sourceRepository": "https://github.com/mahboubi-younes/sillage-perfumierpro-source",
+      "demo": "https://mahboubi-younes.github.io/sillage-perfumierpro-demo/",
+      "technologies": ["React", "Vite", "Electron", "local services"],
+      "screenshots": ["docs/sillage-perfumierpro.png"],
+      "demoCapabilities": ["POS", "inventaire", "clients", "fidélité", "historique des ventes", "analytics"],
+      "limitations": ["démo publique protégée par activation", "source commerciale privée", "accès invité à construire séparément"],
+      "featured": true,
+      "snapshotOrder": 3
+    }
+  ]
+}
