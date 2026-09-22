@@ -23,7 +23,7 @@ for (const project of projects) {
 if (!html.includes('data-lab-src="https://mahboubi-younes.github.io/rh-manager-demo/"')) throw new Error('RH Project Lab missing');
 if (!html.includes('data-lab-src="https://mahboubi-younes.github.io/gema-entreprise/"')) throw new Error('GEMA Project Lab missing');
 if ((html.match(/class="lab-architecture"/g) || []).length < 2) throw new Error('Architecture handoff missing for RH/GEMA labs');
-if (!/activation-gated/i.test(html) || html.includes('data-lab-src="https://mahboubi-younes.github.io/sillage-perfumierpro-demo/')) throw new Error('Sillage must remain honestly activation-gated');
+if (!html.includes('id="lab-sillage"') || !html.includes('data-lab-src="https://mahboubi-younes.github.io/sillage-perfumierpro-demo/')) throw new Error('Sillage Guest Project Lab missing'); if (!/Guest Demo/i.test(html) || !/fictional local data/i.test(html)) throw new Error('Sillage Guest Demo boundary copy missing');
 if (!html.includes('rel="canonical"') || !html.includes('og:title') || !html.includes('twitter:card')) throw new Error('Portfolio SEO metadata incomplete');
 const profileReadme = process.env.PROFILE_README_PATH;
 if (profileReadme) {
