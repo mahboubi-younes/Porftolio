@@ -19,9 +19,11 @@ Businesses that need bespoke software for HR, procurement, inventory, point of s
 
 ## Key features
 
-- Project-led presentation of business-automation work
-- Responsive editorial layout and motion details
-- Direct paths to GitHub and professional contact channels
+- Three flagship projects presented as an engineering showcase
+- Real Project Labs that lazy-load the deployed RH Manager Pro and GEMA applications
+- Ordered Project snapshots for RH Manager Pro, GEMA Entreprise and Sillage — PerfumierPro
+- Shared project catalog used to keep links, capabilities and limitations consistent
+- Responsive editorial layout with reduced-motion-friendly interaction
 - Static deployment with no backend or paid AI-service dependency
 
 ## Live site
@@ -36,6 +38,13 @@ cd Porftolio
 ```
 
 Open `index.html` in a modern browser, or serve the directory with any static-file server.
+
+
+## Engineering showcase architecture
+
+The portfolio is intentionally evidence-led. The source of truth for the three flagship projects lives in [projects/catalog.json](projects/catalog.json). The Project Labs load the real deployed RH Manager Pro and GEMA applications only after interaction; Sillage is labelled activation-gated because its public artifact requires an owner-issued activation.
+
+The GitHub profile consumes this public catalog through its scheduled [profile generator](https://github.com/mahboubi-younes/mahboubi-younes/blob/main/scripts/generate-profile.mjs), so project order, descriptions, demo links and stated limitations do not drift between the two sites.
 
 ## License
 
