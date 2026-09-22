@@ -36,7 +36,7 @@
       "name": "Sillage — PerfumierPro",
       "slug": "sillage-perfumierpro",
       "category": "Retail operations",
-      "status": "activation-gated-demo",
+      "status": "guest-demo",
       "description": "Système de gestion pour parfumeries : point de vente, inventaire, clients, fidélité, historique des ventes, reporting et tarification par format.",
       "repository": "https://github.com/mahboubi-younes/sillage-perfumierpro-demo",
       "sourceRepository": "https://github.com/mahboubi-younes/sillage-perfumierpro-source",
@@ -44,7 +44,7 @@
       "technologies": ["React", "Vite", "Electron", "local services"],
       "screenshots": ["docs/sillage-perfumierpro.png"],
       "demoCapabilities": ["POS", "inventaire", "clients", "fidélité", "historique des ventes", "analytics"],
-      "limitations": ["démo publique protégée par activation", "source commerciale privée", "accès invité à construire séparément"],
+      "limitations": ["Guest Demo isolée avec données fictives locales", "produit commercial activation-gated et source privée"],
       "featured": true,
       "snapshotOrder": 3
     }
