@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mahboubi Younes</title>
+<title>Younes Mahboubi | Business Automation Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
 <style>
@@ -152,7 +152,10 @@ html.lenis{height:auto;}
 .cert-title{font-family:var(--ff-ser);font-size:1rem;font-weight:400;margin-bottom:.3rem;}
 .cert-issuer{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
 .cert-yr{font-family:var(--ff-mon);font-size:.58rem;color:var(--gold);margin-top:.4rem;}
-#contact{min-height:65vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 6%;text-align:center;position:relative;overflow:hidden;}
+.projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--faint);border:1px solid var(--faint);margin-top:3rem;}
+.project-card{background:var(--ink);padding:2.2rem;min-height:245px;display:flex;flex-direction:column;align-items:flex-start;transition:background .3s;}.snapshot-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin:4.5rem 0 1.5rem;}.snapshot-head h3{font-family:var(--ff-ser);font-size:2rem;font-weight:300;line-height:1.05;margin:0;}.snapshot-note{font-size:.7rem;line-height:1.6;color:var(--muted);max-width:23rem;text-align:right;}.snapshot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--faint);border:1px solid var(--faint);}.snapshot-card{background:var(--ink);padding:1rem;}.snapshot-card figure{margin:0;overflow:hidden;background:#111;}.snapshot-card img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;filter:saturate(.86);transition:transform .45s ease,filter .45s ease;}.snapshot-card:hover img{transform:scale(1.025);filter:saturate(1);}.snapshot-card figcaption{padding:.95rem .15rem .15rem;}.snapshot-card strong{display:block;font-family:var(--ff-ser);font-size:1.25rem;font-weight:300;margin-bottom:.35rem;}.snapshot-card span{font-family:var(--ff-mon);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);}
+.project-card:hover{background:var(--dim);}.project-kind{font-family:var(--ff-mon);font-size:.52rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem;}.project-card h3{font-family:var(--ff-ser);font-size:2rem;font-weight:300;line-height:1;margin-bottom:.8rem;}.project-card p{font-size:.78rem;line-height:1.75;color:var(--muted);max-width:32rem;margin-bottom:1.4rem;}.project-tags{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:auto;}.project-tags span{font-family:var(--ff-mon);font-size:.5rem;letter-spacing:.08em;border:1px solid #343434;color:#9a9a9a;padding:.35rem .48rem;}.project-link{font-family:var(--ff-mon);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:1.25rem;}.project-link:hover{color:var(--paper);}
+.contra-wrap{margin-top:1.5rem;min-height:42px;display:flex;justify-content:center;}#contact{min-height:65vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 6%;text-align:center;position:relative;overflow:hidden;}
 #contact::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(184,152,90,.055) 0%,transparent 65%);pointer-events:none;top:50%;left:50%;transform:translate(-50%,-50%);}
 .contact-label{font-family:var(--ff-mon);font-size:.55rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;}
 .contact-h{font-family:var(--ff-ser);font-size:clamp(2.5rem,6vw,7rem);font-weight:300;line-height:1;letter-spacing:-.02em;margin-bottom:1.5rem;}
@@ -166,7 +169,7 @@ footer{padding:1.5rem 6%;border-top:1px solid var(--faint);display:flex;justify-
 .f-mark{font-family:var(--ff-ser);font-size:.85rem;color:rgba(184,152,90,.35);font-style:italic;}
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:7999;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px;}
 @media(max-width:960px){.nav-links{display:none;}.ham{display:flex;}#hero{grid-template-columns:1fr;text-align:center;padding-top:8rem;padding-bottom:11rem;}.hero-eyebrow{justify-content:center;}.hero-desc{margin:0 auto 2.5rem;}.cta-group{justify-content:center;}.hero-right{order:-1;}.photo-wrap{width:min(290px,72%);margin:0 auto;}.hero-stats{position:static;margin-top:3.5rem;justify-content:center;gap:2.5rem;}.scroll-cue{display:none;}#about{grid-template-columns:1fr;gap:3rem;}.skills-inner{grid-template-columns:1fr;gap:3rem;}.exp-row{grid-template-columns:60px 1fr;gap:1.5rem;}.exp-row .exp-points{grid-column:1/-1;padding-left:.5rem;}}
-@media(max-width:560px){#hero,#about,#experience,#skills,#certs,#contact{padding-left:5%;padding-right:5%;}.hero-h1{font-size:clamp(2.8rem,13vw,4rem);}.stat-val{font-size:1.8rem;}.hero-stats{gap:1.5rem;flex-wrap:wrap;}.exp-row{grid-template-columns:1fr;gap:.6rem;}.exp-ghost{display:none;}.cert-row{flex-direction:column;}.cert-item{border-left:none;border-top:1px solid var(--faint);padding:1.2rem 0;}.cert-item:first-child{border-top:none;padding-top:0;}footer{justify-content:center;text-align:center;}}
+@media(max-width:560px){.snapshot-grid{grid-template-columns:1fr;}.snapshot-head{display:block;}.snapshot-note{text-align:left;margin-top:.8rem;}#hero,#about,#experience,#projects,#skills,#certs,#contact{padding-left:5%;padding-right:5%;}.projects-grid{grid-template-columns:1fr;}.hero-h1{font-size:clamp(2.8rem,13vw,4rem);}.stat-val{font-size:1.8rem;}.hero-stats{gap:1.5rem;flex-wrap:wrap;}.exp-row{grid-template-columns:1fr;gap:.6rem;}.exp-ghost{display:none;}.cert-row{flex-direction:column;}.cert-item{border-left:none;border-top:1px solid var(--faint);padding:1.2rem 0;}.cert-item:first-child{border-top:none;padding-top:0;}footer{justify-content:center;text-align:center;}}
 </style>
 </head>
 <body>
@@ -182,6 +185,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:7999;o
 <div id="mob">
   <a href="#about"      onclick="closeMob()">About</a>
   <a href="#experience" onclick="closeMob()">Experience</a>
+  <a href="#projects"   onclick="closeMob()">Projects</a>
   <a href="#skills"     onclick="closeMob()">Skills</a>
   <a href="#contact"    onclick="closeMob()">Contact</a>
 </div>
@@ -190,6 +194,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:7999;o
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
@@ -202,11 +207,11 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:7999;o
       <div class="word"><span>Mahboubi</span></div>
       <div class="word italic"><span>Younes</span></div>
     </h1>
-    <div class="hero-rule"><span>HR &amp; Operations Manager</span></div>
-    <p class="hero-desc">I build organisations that perform and systems that last. An HR strategist who codes, a procurement expert who automates — bridging people with technology to unlock measurable results.</p>
+    <div class="hero-rule"><span>Business Automation Developer</span></div>
+    <p class="hero-desc">I build custom desktop and web software for HR, procurement, inventory, POS, and document workflows — practical systems shaped by 5+ years in operations.</p>
     <div class="cta-group">
       <a href="#contact" class="btn-p"><span>Get in touch</span><span>↗</span></a>
-      <a href="#experience" class="btn-g"><span>View experience</span></a>
+      <a href="#projects" class="btn-g"><span>View projects</span></a>
     </div>
   </div>
   <div class="hero-right">
@@ -239,8 +244,8 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:7999;o
     <h2>Operations<br>meet <em>innovation</em></h2>
   </div>
   <div class="about-right">
-    <p>I'm <strong>Younes</strong> — an operations strategist who speaks both the language of people and the language of machines. I've restructured HR departments, built procurement systems from scratch, and written software that runs real organisations.</p>
-    <p>What sets me apart: I don't outsource the technical side. The <strong>'RH Manager' HR software</strong> I built is a production tool used internally — dashboards, automated reports, live analytics. Not a prototype. A real system.</p>
+    <p>I'm <strong>Younes</strong> — a business systems developer with 5+ years of procurement, HR, and operations experience before coding. I turn the work behind spreadsheets, receipts, and manual follow-ups into focused software.</p>
+    <p>I build custom tools directly: <strong>HR systems, POS and inventory software, procurement workflows, reporting dashboards, and client-facing web apps.</strong> The goal is always the same: give teams a clear workflow they can rely on, without a dependency on paid AI APIs.</p>
     <p style="font-size:.78rem;color:#444;line-height:1.7;">Multilingual across 5 languages. Based in Algiers. Open to remote &amp; international roles.</p>
     <div class="edu-list">
       <div class="edu-item"><div class="edu-deg">Master's in Public Management</div><div class="edu-sch">University of Batna 01</div></div>
@@ -277,7 +282,21 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:7999;o
     <div class="exp-ghost">04</div>
   </div>
 </section>
-<section id="skills">
+<section id="projects">
+  <div class="sec-label">Selected work</div>
+  <h2>Systems built for<br><em>real operations.</em></h2>
+  <div class="projects-grid">
+    <article class="project-card"><div class="project-kind">Retail operations · private product</div><h3>Sillage — PerfumierPro</h3><p>Point-of-sale and shop-management software for perfume boutiques: sales, stock, clients, loyalty, dynamic pricing, receipts with QR purchase history, analytics, accounting, and local backups.</p><div class="project-tags"><span>POS</span><span>INVENTORY</span><span>LOYALTY</span><span>REPORTING</span></div><span class="project-link">Private client build · walkthrough on request</span></article>
+    <article class="project-card"><div class="project-kind">Human resources · live demo</div><h3>RH Manager Pro</h3><p>Interactive HR workflow demo for Algerian teams, covering employee records, leave and absence tracking, payroll estimates, payslip previews, KPI dashboards, and contract alerts.</p><div class="project-tags"><span>HR</span><span>PAYROLL</span><span>WORKFLOWS</span><span>JAVASCRIPT</span></div><a class="project-link" href="https://mahboubi-younes.github.io/rh-manager-demo/" target="_blank" rel="noopener">Open live demo ↗</a></article>
+    <article class="project-card"><div class="project-kind">Enterprise asset management · live demo</div><h3>GEMA Entreprise</h3><p>Frontend autonome de gestion du parc materiel pour les entreprises algeriennes : affectations, restitutions, maintenance, documents administratifs, journal activite et pilotage par roles.</p><div class="project-tags"><span>ASSET MANAGEMENT</span><span>RBAC</span><span>WORKFLOWS</span><span>FRENCH UI</span></div><a class="project-link" href="https://mahboubi-younes.github.io/gema-entreprise/" target="_blank" rel="noopener">Open live demo ↗</a></article>
+    <article class="project-card"><div class="project-kind">Retail customer experience</div><h3>PerfumierPro Customer History</h3><p>A QR-friendly companion for perfume retailers that turns purchase data into a customer’s repeat-visit scent history, helping staff recover preferences without searching receipts.</p><div class="project-tags"><span>POS</span><span>QR CODE</span><span>RETAIL</span><span>JAVASCRIPT</span></div><a class="project-link" href="https://github.com/mahboubi-younes/ParfumHistory" target="_blank" rel="noopener">View project ↗</a></article>
+  </div>
+  <div class="snapshot-head"><div><div class="sec-label">Project snapshots</div><h3>GEMA Entreprise,<br><em>in the workflow.</em></h3></div><p class="snapshot-note">A closer look at the executive dashboard and the operational parc materiel view, captured from the live static demo.</p></div>
+  <div class="snapshot-grid">
+    <article class="snapshot-card"><figure><img src="docs/gema-dashboard.png" alt="GEMA Entreprise executive dashboard with equipment KPIs"></figure><figcaption><strong>Executive dashboard</strong><span>KPI · alerts · activity</span></figcaption></article>
+    <article class="snapshot-card"><figure><img src="docs/gema-parc-materiel.png" alt="GEMA Entreprise equipment inventory list"></figure><figcaption><strong>Parc materiel</strong><span>Inventory · filters · lifecycle</span></figcaption></article>
+  </div>
+</section><section id="skills">
   <div class="sec-label">Expertise</div>
   <h2>Skills &amp; <em>Tools</em></h2>
   <div class="skills-inner">
@@ -318,16 +337,20 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:7999;o
 </section>
 <section id="contact">
   <div class="contact-label">Let's connect</div>
-  <h2 class="contact-h">Open to the<br><em>right opportunity</em></h2>
-  <p class="contact-sub">HR leadership &nbsp;·&nbsp; Operations &nbsp;·&nbsp; Digital systems</p>
+  <h2 class="contact-h">Ready to streamline<br><em>your operations?</em></h2>
+  <p class="contact-sub">Custom business software &nbsp;·&nbsp; Workflow automation &nbsp;·&nbsp; Algeria &amp; remote</p>
   <a href="mailto:mahboubiyounes00@gmail.com" class="contact-email">mahboubiyounes00@gmail.com</a>
   <div class="contact-meta">+213 776 470 300 &nbsp;·&nbsp; Algiers, Algeria</div>
   <a href="mailto:mahboubiyounes00@gmail.com" class="btn-p"><span>Send a message</span><span>↗</span></a>
+  <div class="contra-wrap">
+    <div class="contra-hire-me-button" data-analyticsUserId="39dea3b6-15ac-4547-8b01-a6709bb12a17" data-theme="light" data-username="younes_mahboubi_ki4baezd"></div>
+  </div>
 </section>
 <footer>
-  <div class="f-copy">&copy; 2025 Mahboubi Younes. All rights reserved.</div>
-  <div class="f-mark">Built for excellence.</div>
+  <div class="f-copy">&copy; 2026 Mahboubi Younes. All rights reserved.</div>
+  <div class="f-mark">M.Y</div>
 </footer>
+<script async src="https://contra.com/static/embed/sdk.js" charset="utf-8"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
@@ -380,7 +403,7 @@ gsap.utils.toArray('.exp-row').forEach(row=>{
 gsap.utils.toArray('.edu-item').forEach((el,i)=>{
   gsap.from(el,{y:20,opacity:0,duration:.6,delay:i*.07,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 87%'}});
 });
-['#about .about-left','#about .about-right','#skills h2','#contact .contact-h','#contact .contact-sub','.contact-email','.contact-meta','#contact .btn-p'].forEach(sel=>{
+['#about .about-left','#about .about-right','#projects h2','.project-card','#skills h2','#contact .contact-h','#contact .contact-sub','.contact-email','.contact-meta','#contact .btn-p'].forEach(sel=>{
   const el=document.querySelector(sel);
   if(el) gsap.from(el,{y:28,opacity:0,duration:.8,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}});
 });
@@ -397,6 +420,17 @@ gsap.utils.toArray('.tc-tag').forEach((tag,i)=>{
 });
 gsap.to('.photo-wrap img',{yPercent:-8,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
 ScrollTrigger.refresh();
+</script>
+<script>
+// Deterrent for casual content theft
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) { return false; }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
+}
 </script>
 </body>
 </html>
