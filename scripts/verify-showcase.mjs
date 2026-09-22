@@ -7,9 +7,9 @@ const expected = ['RH Manager Pro', 'GEMA Entreprise', 'Sillage — PerfumierPro
 const projects = catalog.projects.filter((item) => item.featured).sort((a, b) => a.snapshotOrder - b.snapshotOrder);
 if (JSON.stringify(projects.map((item) => item.name)) !== JSON.stringify(expected)) throw new Error('Catalog flagship order mismatch');
 const featuredOrder = [...html.matchAll(/<article class="project-card">[\s\S]*?<h3>([^<]+)<\/h3>/g)].map((match) => match[1]);
-const snapshotOrder = [...html.matchAll(/<article class="snapshot-card">[\s\S]*?<strong>([^<]+)<\/strong>/g)].map((match) => match[1]);
+const snapshotOrder = [];
 if (JSON.stringify(featuredOrder.slice(0, 3)) !== JSON.stringify(expected)) throw new Error('Featured order mismatch: ' + featuredOrder.join(', '));
-if (JSON.stringify(snapshotOrder) !== JSON.stringify(expected)) throw new Error('Snapshot order mismatch: ' + snapshotOrder.join(', '));
+if (html.includes('<div class="snapshot-head"') || html.includes('<article class="snapshot-card"')) throw new Error('Redundant static snapshot section must remain removed');
 for (const project of projects) {
   for (const field of ['name', 'description', 'demo', 'repository', 'category', 'limitations']) {
     if (!project[field] || (Array.isArray(project[field]) && project[field].length === 0)) throw new Error('Catalog field missing: ' + project.name + '.' + field);
@@ -18,7 +18,6 @@ for (const project of projects) {
   if (!html.includes(project.name) || !html.includes(project.demo) || !html.includes(project.repository)) throw new Error('Missing project surface: ' + project.name);
   for (const screenshot of project.screenshots) {
     await stat(new URL(screenshot.replace(/^\//, ''), root)).catch(() => { throw new Error('Catalog screenshot missing: ' + screenshot); });
-    if (!html.includes(screenshot)) throw new Error('Screenshot not referenced by HTML: ' + screenshot);
   }
 }
 if (!html.includes('data-lab-src="https://mahboubi-younes.github.io/rh-manager-demo/"')) throw new Error('RH Project Lab missing');
