@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T12:16:40.232Z",
+  "generatedAt": "2026-09-23T12:18:02.812Z",
   "repository": {
     "name": "mahboubi-younes/Porftolio",
     "description": "Portfolio of Younes Mahboubi, a developer building custom software for administrative workflows and business operations."
@@ -26,8 +26,8 @@
       "detail": "Static browser project; no build script is required or declared"
     },
     "CI": {
-      "status": "detected",
-      "detail": "Workflow detected; latest non-Passport run: in_progress"
+      "status": "verified",
+      "detail": "Latest non-Passport workflow succeeded on 2026-09-23T12:17:37Z"
     },
     "TESTS": {
       "status": "unknown",
@@ -63,15 +63,15 @@
       "detail": "https://mahboubi-younes.github.io/Porftolio/"
     },
     "workflows": {
-      "status": "detected",
-      "detail": "Latest non-Passport workflow: in_progress"
+      "status": "verified",
+      "detail": "Latest non-Passport workflow succeeded on 2026-09-23T12:17:37Z"
     },
     "latestRun": {
-      "name": "Vérifier le showcase d’ingénierie",
-      "status": "in_progress",
-      "conclusion": null,
-      "updatedAt": "2026-09-23T12:16:34Z",
-      "url": "https://github.com/mahboubi-younes/Porftolio/actions/runs/35859456055"
+      "name": "pages build and deployment",
+      "status": "completed",
+      "conclusion": "success",
+      "updatedAt": "2026-09-23T12:17:37Z",
+      "url": "https://github.com/mahboubi-younes/Porftolio/actions/runs/35859478137"
     }
   },
   "files": {
