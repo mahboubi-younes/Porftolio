@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-23T11:03:43.195Z",
+  "repository": {
+    "name": "mahboubi-younes/Porftolio",
+    "description": "Portfolio of Younes Mahboubi, a developer building custom software for administrative workflows and business operations."
+  },
+  "technologies": [
+    "JavaScript"
+  ],
+  "evidence": {
+    "README": {
+      "status": "detected",
+      "detail": "README.md detected"
+    },
+    "LICENSE": {
+      "status": "detected",
+      "detail": "License file detected"
+    },
+    "SOURCE": {
+      "status": "detected",
+      "detail": "Source files detected"
+    },
+    "BUILD": {
+      "status": "unknown",
+      "detail": "Not detected"
+    },
+    "CI": {
+      "status": "detected",
+      "detail": "Workflow run found; latest conclusion: in_progress"
+    },
+    "TESTS": {
+      "status": "unknown",
+      "detail": "Test files and configurations not detected"
+    },
+    "DEPLOYMENT": {
+      "status": "verified",
+      "detail": "https://mahboubi-younes.github.io/Porftolio/"
+    },
+    "DOCUMENTATION": {
+      "status": "detected",
+      "detail": "Documentation sections or docs directory detected"
+    },
+    "ASSETS": {
+      "status": "detected",
+      "detail": "5 screenshot or asset file(s) detected"
+    },
+    "LIVE DEMO": {
+      "status": "detected",
+      "detail": "URL declared in README: https://img.shields.io/badge/Live%20site-GitHub%20Pages-2ea44f?logo=github"
+    }
+  },
+  "github": {
+    "api": {
+      "status": "verified",
+      "detail": "Repository metadata read from GitHub API"
+    },
+    "name": "mahboubi-younes/Porftolio",
+    "description": "Portfolio of Younes Mahboubi, a developer building custom software for administrative workflows and business operations.",
+    "defaultBranch": "main",
+    "pages": {
+      "status": "verified",
+      "detail": "https://mahboubi-younes.github.io/Porftolio/"
+    },
+    "workflows": {
+      "status": "detected",
+      "detail": "Workflow run found; latest conclusion: in_progress"
+    },
+    "latestRun": {
+      "name": "pages build and deployment",
+      "status": "in_progress",
+      "conclusion": null,
+      "updatedAt": "2026-09-23T11:03:40Z"
+    }
+  },
+  "files": {
+    "workflows": [
+      ".github/workflows/engineering-passport.yml",
+      ".github/workflows/showcase-check.yml"
+    ],
+    "tests": [],
+    "docs": [
+      "docs/browser-test-plan.md",
+      "docs/engineering-baseline.md",
+      "docs/gema-dashboard.png",
+      "docs/gema-parc-materiel.png",
+      "docs/preview.png",
+      "docs/rh-manager-pro.png",
+      "docs/sillage-perfumierpro.png"
+    ],
+    "assets": [
+      "docs/gema-dashboard.png",
+      "docs/gema-parc-materiel.png",
+      "docs/preview.png",
+      "docs/rh-manager-pro.png",
+      "docs/sillage-perfumierpro.png"
+    ]
+  }
+}
